@@ -101,21 +101,6 @@ document.addEventListener('touchend', e => {
   if (Math.abs(diff) > 50) diff > 0 ? next() : prev();
 }, { passive: true });
 
-function scalePresentation() {
-  const container = document.getElementById('slide-container');
-  if (!container) return;
-  const scaleX = window.innerWidth / 1920;
-  const scaleY = window.innerHeight / 1080;
-  const scale = Math.min(scaleX, scaleY);
-  container.style.width = '1920px';
-  container.style.height = '1080px';
-  container.style.transform = `scale(${scale})`;
-  container.style.transformOrigin = 'top left';
-  container.style.position = 'fixed';
-  container.style.top = '0';
-  container.style.left = '0';
-}
-
 /* ── Particles ── */
 function initParticles() {
   const canvas = document.getElementById('particles');
@@ -182,7 +167,6 @@ function animateCounters() {
 /* ── Init ── */
 window.addEventListener('load', () => {
   initParticles();
-  window.addEventListener('resize', scalePresentation);
 
   // Build dots
   const dotsEl = document.getElementById('dots');
@@ -195,7 +179,6 @@ window.addEventListener('load', () => {
     });
   }
 
-  scalePresentation();
   goTo(0);
 });
 
