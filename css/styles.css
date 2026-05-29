@@ -37,6 +37,10 @@ html, body {
 }
 
 /* ============ SLIDE CONTAINER ============ */
+#slide-container {
+  overflow: hidden;
+}
+
 .slide {
   width:100vw;
   height:100vh;

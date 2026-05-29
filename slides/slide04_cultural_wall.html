@@ -40,10 +40,92 @@
       </div>
     </div>
 
-    <div class="anim-fade-up delay-2" style="text-align:center;display:flex;justify-content:center;align-items:center;">
+    <div class="anim-fade-up delay-2"
+      style="position:relative;display:inline-block;
+      width:100%;max-height:55vh;">
+
       <img src="images/tunisia.png"
-        style="max-height:55vh;max-width:100%;object-fit:contain;filter:drop-shadow(0 0 32px rgba(0,188,212,0.3));"
-        alt="Tunisia">
+        style="max-height:55vh;max-width:100%;
+        object-fit:contain;display:block;
+        margin:0 auto;
+        filter:drop-shadow(0 0 24px rgba(0,188,212,0.25))
+        brightness(0.9);">
+
+      <!-- TUNIS annotation — top area ~52% left, 18% top -->
+      <div style="position:absolute;top:12%;left:52%;
+        transform:translateX(-50%);">
+        <div style="display:flex;flex-direction:column;
+          align-items:center;gap:4px;">
+          <div style="background:rgba(0,188,212,0.15);
+            border:1px solid var(--teal);
+            border-radius:8px;padding:5px 10px;
+            white-space:nowrap;">
+            <div style="color:var(--teal);font-size:11px;
+              font-weight:800;font-family:var(--font-head);">
+              TUNIS</div>
+            <div style="color:rgba(255,255,255,0.7);
+              font-size:10px;line-height:1.3;">
+              Capital · Few specialists<br>
+              High patient-to-expert ratio</div>
+          </div>
+          <div style="width:1px;height:16px;
+            background:var(--teal);opacity:0.7;"></div>
+          <div style="width:7px;height:7px;
+            border-radius:50%;background:var(--teal);
+            box-shadow:0 0 8px var(--teal);"></div>
+        </div>
+      </div>
+
+      <!-- SOUSSE annotation — ~65% left, 35% top -->
+      <div style="position:absolute;top:30%;left:68%;
+        transform:translateX(-50%);">
+        <div style="display:flex;flex-direction:column;
+          align-items:center;gap:4px;">
+          <div style="background:rgba(255,107,53,0.12);
+            border:1px solid var(--orange);
+            border-radius:8px;padding:5px 10px;
+            white-space:nowrap;">
+            <div style="color:var(--orange);font-size:11px;
+              font-weight:800;font-family:var(--font-head);">
+              SOUSSE · ISITCOM</div>
+            <div style="color:rgba(255,255,255,0.7);
+              font-size:10px;line-height:1.3;">
+              0 pediatric screening centers<br>
+              No trained evaluators</div>
+          </div>
+          <div style="width:1px;height:16px;
+            background:var(--orange);opacity:0.7;"></div>
+          <div style="width:7px;height:7px;
+            border-radius:50%;background:var(--orange);
+            box-shadow:0 0 8px var(--orange);"></div>
+        </div>
+      </div>
+
+      <!-- SFAX annotation — ~63% left, 58% top -->
+      <div style="position:absolute;top:53%;left:66%;
+        transform:translateX(-50%);">
+        <div style="display:flex;flex-direction:column;
+          align-items:center;gap:4px;">
+          <div style="background:rgba(239,83,80,0.12);
+            border:1px solid var(--red);
+            border-radius:8px;padding:5px 10px;
+            white-space:nowrap;">
+            <div style="color:var(--red);font-size:11px;
+              font-weight:800;font-family:var(--font-head);">
+              SFAX</div>
+            <div style="color:rgba(255,255,255,0.7);
+              font-size:10px;line-height:1.3;">
+              2nd largest city<br>
+              No dyslexia screening access</div>
+          </div>
+          <div style="width:1px;height:16px;
+            background:var(--red);opacity:0.7;"></div>
+          <div style="width:7px;height:7px;
+            border-radius:50%;background:var(--red);
+            box-shadow:0 0 8px var(--red);"></div>
+        </div>
+      </div>
+
     </div>
   </div>
 
