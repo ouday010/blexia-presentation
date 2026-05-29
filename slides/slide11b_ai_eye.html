@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="../css/styles.css">
+<div class="slide">
+  <div class="slide-header">
+    <span class="section-tag">10 · AI Pipelines — Eye Tracking</span>
+    <img src="images/blexia_logo.png" class="slide-logo" alt="B.Lexia">
+  </div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;flex:1;">
+
+    <div>
+      <h2 class="slide-title anim-fade-up delay-1" style="color:#42A5F5;">
+        👁️ Eye Tracking
+      </h2>
+      <div style="display:flex;flex-direction:column;gap:12px;margin-top:8px;">
+        <div class="card anim-fade-up delay-2">
+          <span class="mono">Dataset</span>
+          <span style="color:var(--soft-white);margin-left:12px;font-size:16px;">
+            ETDD70 · 70 subjects
+          </span>
+        </div>
+        <div class="card anim-fade-up delay-3">
+          <span class="mono">Features</span>
+          <span style="color:var(--soft-white);margin-left:12px;font-size:16px;">
+            111 oculomotor (fixation, saccade, regression)
+          </span>
+        </div>
+        <div class="card anim-fade-up delay-4">
+          <span class="mono">Models</span>
+          <span style="color:var(--soft-white);margin-left:12px;font-size:16px;">
+            RF + SVM + LGB + LR soft-voting
+          </span>
+        </div>
+        <div class="card anim-fade-up delay-5" style="border-color:#42A5F5;text-align:center;display:flex;gap:24px;justify-content:space-around;">
+          <div>
+            <div class="stat-number" style="font-size:48px;color:#42A5F5;" data-count="0.933">0</div>
+            <div class="stat-label">AUC LOSO</div>
+          </div>
+          <div>
+            <div class="stat-number" style="font-size:48px;color:#42A5F5;" data-count="0.87">0</div>
+            <div class="stat-label">F1-Score</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="anim-fade-up delay-2">
+      <img src="figures/fig3_8_pipeline_eye.png"
+        style="width:100%;max-height:62vh;object-fit:contain;border-radius:12px;filter:drop-shadow(0 8px 24px rgba(0,0,0,0.4));"
+        alt="Eye tracking pipeline">
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span class="footer-text">B.Lexia · PFE 2025–2026</span>
+    <span class="footer-text">11b</span>
+  </div>
+</div>
+<script>
+  if (typeof animateCounters === 'function') animateCounters();
+</script>

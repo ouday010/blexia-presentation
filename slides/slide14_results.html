@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="../css/styles.css">
+<div class="slide">
+  <div class="slide-header">
+    <span class="section-tag">13 · Results</span>
+    <img src="images/blexia_logo.png" class="slide-logo" alt="B.Lexia">
+  </div>
+
+  <h2 class="slide-title anim-fade-up delay-1">
+    Model performance — <span class="highlight">evaluation</span>
+  </h2>
+
+  <div class="grid-3" style="flex:1;gap:18px;margin-top:8px;">
+
+    <div class="card card-gold anim-fade-up delay-2" style="display:flex;flex-direction:column;gap:12px;padding:18px;">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <span style="font-size:22px;">🎙️</span>
+        <span style="color:var(--gold);font-family:var(--font-mono);font-size:12px;font-weight:700;letter-spacing:2px;">SPEECH</span>
+      </div>
+      <img src="figures/fig_eval_speech.png"
+        style="width:100%;flex:1;object-fit:contain;border-radius:8px;max-height:38vh;"
+        alt="Speech evaluation">
+      <div style="display:flex;justify-content:space-around;text-align:center;padding-top:6px;border-top:1px solid var(--glass-border);">
+        <div>
+          <div class="stat-number" style="font-size:28px;color:var(--gold);" data-count="0.918">0</div>
+          <div class="stat-label" style="font-size:11px;">AUC</div>
+        </div>
+        <div>
+          <div class="stat-number" style="font-size:28px;color:var(--gold);" data-count="84.2">0</div>
+          <div class="stat-label" style="font-size:11px;">% ACC</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card anim-fade-up delay-3" style="display:flex;flex-direction:column;gap:12px;padding:18px;border-color:#42A5F5;">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <span style="font-size:22px;">👁️</span>
+        <span style="color:#42A5F5;font-family:var(--font-mono);font-size:12px;font-weight:700;letter-spacing:2px;">EYE TRACKING</span>
+      </div>
+      <img src="figures/fig_eval_eye.png"
+        style="width:100%;flex:1;object-fit:contain;border-radius:8px;max-height:38vh;"
+        alt="Eye tracking evaluation">
+      <div style="display:flex;justify-content:center;text-align:center;padding-top:6px;border-top:1px solid var(--glass-border);">
+        <div>
+          <div class="stat-number" style="font-size:28px;color:#42A5F5;" data-count="0.933">0</div>
+          <div class="stat-label" style="font-size:11px;">LOSO cross-validation</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-purple anim-fade-up delay-4" style="display:flex;flex-direction:column;gap:12px;padding:18px;">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <span style="font-size:22px;">✍️</span>
+        <span style="color:var(--purple);font-family:var(--font-mono);font-size:12px;font-weight:700;letter-spacing:2px;">HANDWRITING</span>
+      </div>
+      <img src="figures/fig_eval_hw.png"
+        style="width:100%;flex:1;object-fit:contain;border-radius:8px;max-height:38vh;"
+        alt="Handwriting evaluation">
+      <div style="display:flex;justify-content:space-around;text-align:center;padding-top:6px;border-top:1px solid var(--glass-border);">
+        <div>
+          <div class="stat-number" style="font-size:28px;color:var(--purple);" data-count="0.999">0</div>
+          <div class="stat-label" style="font-size:11px;">AUC</div>
+        </div>
+        <div>
+          <div class="stat-number" style="font-size:28px;color:var(--purple);" data-count="0.99">0</div>
+          <div class="stat-label" style="font-size:11px;">F1</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-footer">
+    <span class="footer-text">B.Lexia · PFE 2025–2026</span>
+    <span class="footer-text">14</span>
+  </div>
+</div>
+<script>
+  if (typeof animateCounters === 'function') animateCounters();
+</script>
