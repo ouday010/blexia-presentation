@@ -1,23 +1,208 @@
-<link rel="stylesheet" href="../css/styles.css">
-<div class="slide">
-  <div class="slide-header">
+<div class="slide" style="padding-top:2px;">
+  <div class="slide-header" style="margin-bottom:0px; margin-top:-6px;">
     <span class="section-tag">08 · Use Cases</span>
     <img src="images/blexia_logo.png" class="slide-logo" alt="B.Lexia">
   </div>
 
-  <h2 class="slide-title anim-fade-up delay-1">
-    10 use cases · <span class="highlight">5 actors</span>
-  </h2>
+  <div class="anim-fade-up delay-1" style="text-align:center;margin-bottom:0px;margin-top:-0px;">
+    <span style="font-family:'Nunito',sans-serif;font-size:clamp(25px,3.15vw,43px);font-weight:900;color:white;">10 use cases · </span><span style="font-family:'Nunito',sans-serif;font-size:clamp(25px,3.15vw,43px);font-weight:900;color:var(--teal);">5 actors</span>
+  </div>
 
-  <div style="flex:1;display:flex;justify-content:center;align-items:center;">
-    <img src="figures/fig2_1_usecase.png"
-      class="anim-fade-in delay-2"
-      style="max-width:92%;max-height:65vh;object-fit:contain;border-radius:12px;filter:drop-shadow(0 8px 24px rgba(0,0,0,0.5));"
-      alt="Use case diagram">
+  <div style="flex:1;display:flex;align-items:flex-start;justify-content:center;overflow:visible;margin-top:-8px;">
+<svg viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg"
+     style="width:82%;height:auto;min-height:340px;display:block;margin:0 auto;">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5"
+          markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+    <path d="M1 2L9 5L1 8" fill="none" stroke="#ccc" stroke-width="1.5" stroke-linecap="round"/>
+  </marker>
+  <marker id="arr-gold" viewBox="0 0 10 10" refX="9" refY="5"
+          markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+    <path d="M1 2L9 5L1 8" fill="none" stroke="#f5c842" stroke-width="1.5" stroke-linecap="round"/>
+  </marker>
+  <marker id="arr-blue" viewBox="0 0 10 10" refX="9" refY="5"
+          markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+    <path d="M1 2L9 5L1 8" fill="none" stroke="#60a5fa" stroke-width="1.5" stroke-linecap="round"/>
+  </marker>
+  <marker id="arr-teal" viewBox="0 0 10 10" refX="9" refY="5"
+          markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+    <path d="M1 2L9 5L1 8" fill="none" stroke="#2dd4bf" stroke-width="1.5" stroke-linecap="round"/>
+  </marker>
+  <marker id="arr-purple" viewBox="0 0 10 10" refX="9" refY="5"
+          markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+    <path d="M1 2L9 5L1 8" fill="none" stroke="#a78bfa" stroke-width="1.5" stroke-linecap="round"/>
+  </marker>
+</defs>
+
+<!-- ═══ SYSTEM BOUNDARY ═══ -->
+<rect x="130" y="10" width="640" height="478" rx="6"
+      fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.2"/>
+<text x="450" y="24" text-anchor="middle" font-size="11"
+      font-weight="600" fill="white" font-family="Nunito,sans-serif">B.Lexia Platform</text>
+
+<!-- ═══ LEFT COLUMN: UC-01 to UC-05, UC-07 ═══ -->
+
+<!-- UC-01 top center -->
+<ellipse cx="370" cy="52" rx="105" ry="24" fill="white" stroke="#94a3b8" stroke-width="1"/>
+<text x="370" y="47" text-anchor="middle" font-size="8" font-weight="700" fill="#1e293b" font-family="Nunito,sans-serif">UC-01</text>
+<text x="370" y="59" text-anchor="middle" font-size="7.5" fill="#1e293b" font-family="Nunito,sans-serif">Authentication &amp; Account Mgmt</text>
+
+<!-- UC-02 -->
+<ellipse cx="300" cy="125" rx="75" ry="22" fill="white" stroke="#94a3b8" stroke-width="1"/>
+<text x="300" y="120" text-anchor="middle" font-size="8" font-weight="700" fill="#1e293b" font-family="Nunito,sans-serif">UC-02</text>
+<text x="300" y="132" text-anchor="middle" font-size="7.5" fill="#1e293b" font-family="Nunito,sans-serif">Speech Analysis</text>
+
+<!-- UC-03 -->
+<ellipse cx="300" cy="195" rx="75" ry="22" fill="white" stroke="#94a3b8" stroke-width="1"/>
+<text x="300" y="190" text-anchor="middle" font-size="8" font-weight="700" fill="#1e293b" font-family="Nunito,sans-serif">UC-03</text>
+<text x="300" y="202" text-anchor="middle" font-size="7.5" fill="#1e293b" font-family="Nunito,sans-serif">Eye Tracking</text>
+
+<!-- UC-04 -->
+<ellipse cx="300" cy="265" rx="75" ry="22" fill="white" stroke="#94a3b8" stroke-width="1"/>
+<text x="300" y="260" text-anchor="middle" font-size="8" font-weight="700" fill="#1e293b" font-family="Nunito,sans-serif">UC-04</text>
+<text x="300" y="272" text-anchor="middle" font-size="7.5" fill="#1e293b" font-family="Nunito,sans-serif">Handwriting Analysis</text>
+
+<!-- UC-05 -->
+<ellipse cx="300" cy="335" rx="75" ry="22" fill="white" stroke="#94a3b8" stroke-width="1"/>
+<text x="300" y="330" text-anchor="middle" font-size="8" font-weight="700" fill="#1e293b" font-family="Nunito,sans-serif">UC-05</text>
+<text x="300" y="342" text-anchor="middle" font-size="7.5" fill="#1e293b" font-family="Nunito,sans-serif">Phonological Games</text>
+
+<!-- UC-07 moved up — below UC-05 on left -->
+<ellipse cx="300" cy="415" rx="75" ry="22" fill="white" stroke="#94a3b8" stroke-width="1"/>
+<text x="300" y="410" text-anchor="middle" font-size="8" font-weight="700" fill="#1e293b" font-family="Nunito,sans-serif">UC-07</text>
+<text x="300" y="422" text-anchor="middle" font-size="7.5" fill="#1e293b" font-family="Nunito,sans-serif">Browse Platform (View Only)</text>
+
+<!-- ═══ RIGHT COLUMN: UC-08, UC-09, UC-10, UC-06 ═══ -->
+
+<!-- UC-08 -->
+<ellipse cx="590" cy="100" rx="85" ry="22" fill="white" stroke="#94a3b8" stroke-width="1"/>
+<text x="590" y="95" text-anchor="middle" font-size="8" font-weight="700" fill="#1e293b" font-family="Nunito,sans-serif">UC-08</text>
+<text x="590" y="107" text-anchor="middle" font-size="7.5" fill="#1e293b" font-family="Nunito,sans-serif">Manage User Accounts</text>
+
+<!-- UC-09 -->
+<ellipse cx="590" cy="200" rx="85" ry="22" fill="white" stroke="#94a3b8" stroke-width="1"/>
+<text x="590" y="195" text-anchor="middle" font-size="8" font-weight="700" fill="#1e293b" font-family="Nunito,sans-serif">UC-09</text>
+<text x="590" y="207" text-anchor="middle" font-size="7.5" fill="#1e293b" font-family="Nunito,sans-serif">View &amp; Monitor All Results</text>
+
+<!-- UC-10 -->
+<ellipse cx="590" cy="300" rx="85" ry="22" fill="white" stroke="#94a3b8" stroke-width="1"/>
+<text x="590" y="295" text-anchor="middle" font-size="8" font-weight="700" fill="#1e293b" font-family="Nunito,sans-serif">UC-10</text>
+<text x="590" y="307" text-anchor="middle" font-size="7.5" fill="#1e293b" font-family="Nunito,sans-serif">Platform Config &amp; Maintenance</text>
+
+<!-- UC-06 moved — below UC-10 on right -->
+<ellipse cx="590" cy="415" rx="85" ry="22" fill="white" stroke="#94a3b8" stroke-width="1"/>
+<text x="590" y="408" text-anchor="middle" font-size="8" font-weight="700" fill="#1e293b" font-family="Nunito,sans-serif">UC-06</text>
+<text x="590" y="420" text-anchor="middle" font-size="7.5" fill="#1e293b" font-family="Nunito,sans-serif">Conclusion &amp; Report Gen.</text>
+
+<!-- ═══ SYSTEM ACTOR BOXES ═══ -->
+<!-- AI Inference — moved to top right -->
+<rect x="800" y="55" width="148" height="68" rx="4" fill="white" stroke="#60a5fa" stroke-width="1.2"/>
+<text x="874" y="72" text-anchor="middle" font-size="8" font-weight="700" fill="#1e40af" font-family="Nunito,sans-serif">AI Inference System</text>
+<text x="874" y="84" text-anchor="middle" font-size="7" fill="#374151" font-family="Nunito,sans-serif">speech_inference.py</text>
+<text x="874" y="94" text-anchor="middle" font-size="7" fill="#374151" font-family="Nunito,sans-serif">eye_inference.py</text>
+<text x="874" y="104" text-anchor="middle" font-size="7" fill="#374151" font-family="Nunito,sans-serif">handwriting_inference.py</text>
+
+<!-- External Services — lower -->
+<rect x="800" y="340" width="148" height="68" rx="4" fill="white" stroke="#f5c842" stroke-width="1.2"/>
+<text x="874" y="357" text-anchor="middle" font-size="8" font-weight="700" fill="#92400e" font-family="Nunito,sans-serif">External Services</text>
+<text x="874" y="369" text-anchor="middle" font-size="7" fill="#374151" font-family="Nunito,sans-serif">Gemini 2.5 Flash API</text>
+<text x="874" y="379" text-anchor="middle" font-size="7" fill="#374151" font-family="Nunito,sans-serif">Supabase PostgreSQL</text>
+<text x="874" y="389" text-anchor="middle" font-size="7" fill="#374151" font-family="Nunito,sans-serif">Google Cloud Storage</text>
+
+<!-- ═══ HUMAN ACTORS ═══ -->
+<!-- Registered User — moved higher -->
+<circle cx="55" cy="180" r="12" fill="none" stroke="white" stroke-width="1.5"/>
+<line x1="55" y1="192" x2="55" y2="226" stroke="white" stroke-width="1.5"/>
+<line x1="35" y1="206" x2="75" y2="206" stroke="white" stroke-width="1.5"/>
+<line x1="55" y1="226" x2="40" y2="244" stroke="white" stroke-width="1.5"/>
+<line x1="55" y1="226" x2="70" y2="244" stroke="white" stroke-width="1.5"/>
+<text x="55" y="256" text-anchor="middle" font-size="9" fill="white" font-weight="600" font-family="Nunito,sans-serif">Registered</text>
+<text x="55" y="267" text-anchor="middle" font-size="9" fill="white" font-weight="600" font-family="Nunito,sans-serif">User</text>
+
+<!-- Guest — moved higher -->
+<circle cx="55" cy="370" r="12" fill="none" stroke="white" stroke-width="1.5"/>
+<line x1="55" y1="382" x2="55" y2="406" stroke="white" stroke-width="1.5"/>
+<line x1="35" y1="392" x2="75" y2="392" stroke="white" stroke-width="1.5"/>
+<line x1="55" y1="406" x2="42" y2="422" stroke="white" stroke-width="1.5"/>
+<line x1="55" y1="406" x2="68" y2="422" stroke="white" stroke-width="1.5"/>
+<text x="55" y="434" text-anchor="middle" font-size="9" fill="white" font-weight="600" font-family="Nunito,sans-serif">Guest</text>
+
+<!-- Administrator -->
+<circle cx="960" cy="200" r="12" fill="none" stroke="#f5c842" stroke-width="1.5"/>
+<line x1="960" y1="212" x2="960" y2="246" stroke="#f5c842" stroke-width="1.5"/>
+<line x1="940" y1="226" x2="980" y2="226" stroke="#f5c842" stroke-width="1.5"/>
+<line x1="960" y1="246" x2="946" y2="264" stroke="#f5c842" stroke-width="1.5"/>
+<line x1="960" y1="246" x2="974" y2="264" stroke="#f5c842" stroke-width="1.5"/>
+<text x="960" y="276" text-anchor="middle" font-size="9" fill="#f5c842" font-weight="600" font-family="Nunito,sans-serif">Administrator</text>
+
+<!-- ═══ ASSOCIATIONS: Registered User → UCs (spread out) ═══ -->
+<line x1="67" y1="172" x2="263" y2="68" stroke="white" stroke-width="0.9"/>
+<line x1="67" y1="178" x2="224" y2="128" stroke="white" stroke-width="0.9"/>
+<line x1="67" y1="184" x2="224" y2="196" stroke="white" stroke-width="0.9"/>
+<line x1="67" y1="190" x2="224" y2="264" stroke="white" stroke-width="0.9"/>
+<line x1="67" y1="196" x2="224" y2="334" stroke="white" stroke-width="0.9"/>
+<line x1="67" y1="202" x2="224" y2="433" stroke="white" stroke-width="0.9"/>
+
+<!-- Guest → UC-07 -->
+<line x1="67" y1="372" x2="224" y2="415" stroke="white" stroke-width="0.9"/>
+
+<!-- Admin → UC-08,09,10 (gold) -->
+<line x1="948" y1="194" x2="676" y2="106" stroke="#f5c842" stroke-width="0.9"/>
+<line x1="950" y1="200" x2="676" y2="200" stroke="#f5c842" stroke-width="0.9"/>
+<line x1="948" y1="208" x2="676" y2="296" stroke="#f5c842" stroke-width="0.9"/>
+
+<!-- ═══ INCLUDE UC-01 → UC-02,03,04,05,06 (dashed gray — spread horizontally) ═══ -->
+<path d="M295 76 Q278 98 285 103" stroke="#ccc" stroke-width="0.9" stroke-dasharray="4,3" fill="none" marker-end="url(#arr)"/>
+<text x="254" y="92" text-anchor="middle" font-size="6.5" fill="#ccc" font-style="italic" font-family="Nunito,sans-serif">&lt;&lt;include&gt;&gt;</text>
+
+<path d="M310 76 Q302 130 302 173" stroke="#ccc" stroke-width="0.9" stroke-dasharray="4,3" fill="none" marker-end="url(#arr)"/>
+<text x="282" y="128" text-anchor="middle" font-size="6.5" fill="#ccc" font-style="italic" font-family="Nunito,sans-serif">&lt;&lt;include&gt;&gt;</text>
+
+<path d="M322 76 Q315 165 304 243" stroke="#ccc" stroke-width="0.9" stroke-dasharray="4,3" fill="none" marker-end="url(#arr)"/>
+<text x="296" y="165" text-anchor="middle" font-size="6.5" fill="#ccc" font-style="italic" font-family="Nunito,sans-serif">&lt;&lt;include&gt;&gt;</text>
+
+<path d="M336 76 Q328 200 305 313" stroke="#ccc" stroke-width="0.9" stroke-dasharray="4,3" fill="none" marker-end="url(#arr)"/>
+<text x="310" y="200" text-anchor="middle" font-size="6.5" fill="#ccc" font-style="italic" font-family="Nunito,sans-serif">&lt;&lt;include&gt;&gt;</text>
+
+<path d="M410 74 Q500 60 504 393" stroke="#ccc" stroke-width="0.9" stroke-dasharray="4,3" fill="none" marker-end="url(#arr)"/>
+<text x="472" y="58" text-anchor="middle" font-size="6.5" fill="#ccc" font-style="italic" font-family="Nunito,sans-serif">&lt;&lt;include&gt;&gt;</text>
+
+<!-- ═══ EXTEND UC-05 → UC-06 (dashed purple, now cross to right column) ═══ -->
+<path d="M375 335 Q480 375 504 393" stroke="#a78bfa" stroke-width="0.9" stroke-dasharray="4,3" fill="none" marker-end="url(#arr-purple)"/>
+<text x="438" y="352" text-anchor="middle" font-size="6.5" fill="#a78bfa" font-style="italic" font-family="Nunito,sans-serif">&lt;&lt;extend&gt;&gt;</text>
+
+<!-- ═══ INCLUDE Admin UCs → UC-01 (dashed gold) ═══ -->
+<path d="M506 100 Q460 80 476 62" stroke="#f5c842" stroke-width="0.9" stroke-dasharray="4,3" fill="none" marker-end="url(#arr-gold)"/>
+<text x="480" y="74" text-anchor="middle" font-size="6.5" fill="#f5c842" font-style="italic" font-family="Nunito,sans-serif">&lt;&lt;include&gt;&gt;</text>
+
+<path d="M506 200 Q468 140 478 66" stroke="#f5c842" stroke-width="0.9" stroke-dasharray="4,3" fill="none" marker-end="url(#arr-gold)"/>
+
+<path d="M506 300 Q470 200 480 70" stroke="#f5c842" stroke-width="0.9" stroke-dasharray="4,3" fill="none" marker-end="url(#arr-gold)"/>
+
+<!-- ═══ INCLUDE UC-02,03,04 → AI Inference (dashed blue) ═══ -->
+<path d="M375 122 Q590 100 800 82" stroke="#60a5fa" stroke-width="0.8" stroke-dasharray="4,3" fill="none" marker-end="url(#arr-blue)"/>
+<text x="586" y="96" text-anchor="middle" font-size="6.5" fill="#60a5fa" font-style="italic" font-family="Nunito,sans-serif">&lt;&lt;include&gt;&gt;</text>
+
+<path d="M375 193 Q590 130 800 100" stroke="#60a5fa" stroke-width="0.8" stroke-dasharray="4,3" fill="none" marker-end="url(#arr-blue)"/>
+
+<path d="M375 263 Q590 180 800 112" stroke="#60a5fa" stroke-width="0.8" stroke-dasharray="4,3" fill="none" marker-end="url(#arr-blue)"/>
+
+<!-- UC-09,10 → AI Inference -->
+<path d="M676 196 Q738 148 800 110" stroke="#60a5fa" stroke-width="0.8" stroke-dasharray="4,3" fill="none" marker-end="url(#arr-blue)"/>
+<path d="M676 296 Q738 200 800 118" stroke="#60a5fa" stroke-width="0.8" stroke-dasharray="4,3" fill="none" marker-end="url(#arr-blue)"/>
+
+<!-- ═══ INCLUDE UC-04,06,10 → External Services (dashed teal) ═══ -->
+<path d="M375 268 Q590 330 800 358" stroke="#2dd4bf" stroke-width="0.8" stroke-dasharray="4,3" fill="none" marker-end="url(#arr-teal)"/>
+<text x="586" y="328" text-anchor="middle" font-size="6.5" fill="#2dd4bf" font-style="italic" font-family="Nunito,sans-serif">&lt;&lt;include&gt;&gt;</text>
+
+<path d="M675 415 Q738 400 800 388" stroke="#2dd4bf" stroke-width="0.8" stroke-dasharray="4,3" fill="none" marker-end="url(#arr-teal)"/>
+
+<path d="M676 304 Q738 360 800 368" stroke="#2dd4bf" stroke-width="0.8" stroke-dasharray="4,3" fill="none" marker-end="url(#arr-teal)"/>
+
+</svg>
   </div>
 
   <div class="slide-footer">
     <span class="footer-text">B.Lexia · PFE 2025–2026</span>
-    <span class="footer-text">09</span>
   </div>
 </div>

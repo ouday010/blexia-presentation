@@ -1,36 +1,35 @@
-<link rel="stylesheet" href="../css/styles.css">
 <div class="slide">
   <div class="slide-header">
     <span class="section-tag">15 · Limitations &amp; Future Work</span>
     <img src="images/blexia_logo.png" class="slide-logo" alt="B.Lexia">
   </div>
 
-  <h2 class="slide-title anim-fade-up delay-1">
+  <h2 class="slide-title anim-fade-up delay-1" style="font-size:clamp(20px, 2.9vw, 38px);">
     Honest scope — <span class="accent">limits</span> &amp; <span class="highlight">next steps</span>
   </h2>
 
-  <div class="grid-2" style="flex:1;gap:32px;margin-top:8px;">
+  <div class="grid-2" style="flex:1;gap:29px;margin-top:7px;">
 
     <div class="anim-fade-up delay-2">
-      <h3 style="color:var(--red);font-family:var(--font-head);font-size:20px;font-weight:800;margin-bottom:14px;display:flex;align-items:center;gap:10px;">
+      <h3 style="color:var(--red);font-family:var(--font-head);font-size:18px;font-weight:800;margin-bottom:13px;display:flex;align-items:center;gap:9px;">
         ⚠️ Current Limitations
       </h3>
-      <div style="display:flex;flex-direction:column;gap:10px;">
-        <div class="card card-red" style="padding:16px 18px;">
-          <span style="color:var(--white);font-weight:700;">Proxy datasets</span>
-          <p style="color:var(--muted);font-size:14px;margin-top:4px;">
+      <div style="display:flex;flex-direction:column;gap:9px;">
+        <div class="card card-red" style="padding:14px 16px;">
+          <span style="color:var(--white);font-weight:700;font-size:14px;">Proxy datasets</span>
+          <p style="color:var(--muted);font-size:13px;margin-top:4px;">
             Models trained on dyslexia-adjacent data (stuttering, gaze), not Tunisian children directly.
           </p>
         </div>
-        <div class="card card-red" style="padding:16px 18px;">
-          <span style="color:var(--white);font-weight:700;">Pre-screening only</span>
-          <p style="color:var(--muted);font-size:14px;margin-top:4px;">
+        <div class="card card-red" style="padding:14px 16px;">
+          <span style="color:var(--white);font-weight:700;font-size:14px;">Pre-screening only</span>
+          <p style="color:var(--muted);font-size:13px;margin-top:4px;">
             Not a clinical diagnosis — flags risk, never replaces a certified specialist.
           </p>
         </div>
-        <div class="card card-red" style="padding:16px 18px;">
-          <span style="color:var(--white);font-weight:700;">No Arabic-script gaze data</span>
-          <p style="color:var(--muted);font-size:14px;margin-top:4px;">
+        <div class="card card-red" style="padding:14px 16px;">
+          <span style="color:var(--white);font-weight:700;font-size:14px;">No Arabic-script gaze data</span>
+          <p style="color:var(--muted);font-size:13px;margin-top:4px;">
             ETDD70 is Latin-script; right-to-left reading patterns remain to be modelled.
           </p>
         </div>
@@ -38,26 +37,38 @@
     </div>
 
     <div class="anim-fade-up delay-3">
-      <h3 style="color:var(--green);font-family:var(--font-head);font-size:20px;font-weight:800;margin-bottom:14px;display:flex;align-items:center;gap:10px;">
+      <h3 style="color:var(--green);font-family:var(--font-head);font-size:18px;font-weight:800;margin-bottom:13px;display:flex;align-items:center;gap:9px;">
         🚀 Future Perspectives
       </h3>
-      <div style="display:flex;flex-direction:column;gap:10px;">
-        <div class="card card-green" style="padding:16px 18px;">
-          <span style="color:var(--white);font-weight:700;">Local pilot studies</span>
-          <p style="color:var(--muted);font-size:14px;margin-top:4px;">
+      <div style="display:flex;flex-direction:column;gap:9px;">
+        <div class="card card-green" style="padding:14px 16px;">
+          <span style="color:var(--white);font-weight:700;font-size:14px;">Local pilot studies</span>
+          <p style="color:var(--muted);font-size:13px;margin-top:4px;">
             Partnerships with Tunisian schools to collect bilingual gold-standard data.
           </p>
         </div>
-        <div class="card card-green" style="padding:16px 18px;">
-          <span style="color:var(--white);font-weight:700;">Gamified screening</span>
-          <p style="color:var(--muted);font-size:14px;margin-top:4px;">
+        <div class="card card-green" style="padding:14px 16px;">
+          <span style="color:var(--white);font-weight:700;font-size:14px;">Gamified screening</span>
+          <p style="color:var(--muted);font-size:13px;margin-top:4px;">
             Child-friendly mini-games to reduce fatigue and improve compliance.
           </p>
         </div>
-        <div class="card card-green" style="padding:16px 18px;">
-          <span style="color:var(--white);font-weight:700;">Mobile + offline mode</span>
-          <p style="color:var(--muted);font-size:14px;margin-top:4px;">
+        <div class="card card-green" style="padding:14px 16px;">
+          <span style="color:var(--white);font-weight:700;font-size:14px;">Mobile + offline mode</span>
+          <p style="color:var(--muted);font-size:13px;margin-top:4px;">
             Progressive Web App for low-connectivity rural deployment.
+          </p>
+        </div>
+        <div class="card card-green" style="padding:14px 16px;">
+          <span style="color:var(--white);font-weight:700;font-size:14px;">Arabic &amp; RTL language support</span>
+          <p style="color:var(--muted);font-size:13px;margin-top:4px;">
+            Extend gaze models and UI layout for right-to-left reading patterns in MENA region.
+          </p>
+        </div>
+        <div class="card card-green" style="padding:14px 16px;">
+          <span style="color:var(--white);font-weight:700;font-size:14px;">Federated learning</span>
+          <p style="color:var(--muted);font-size:13px;margin-top:4px;">
+            Privacy-preserving model improvement across schools without sharing raw patient data.
           </p>
         </div>
       </div>
@@ -66,6 +77,5 @@
 
   <div class="slide-footer">
     <span class="footer-text">B.Lexia · PFE 2025–2026</span>
-    <span class="footer-text">16</span>
   </div>
 </div>

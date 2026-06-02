@@ -1,136 +1,61 @@
-<link rel="stylesheet" href="../css/styles.css">
-<div class="slide">
+<div class="slide" style="justify-content:flex-start;padding-top:8px;">
   <div class="slide-header">
     <span class="section-tag">03 · Cultural Wall</span>
     <img src="images/blexia_logo.png" class="slide-logo" alt="B.Lexia">
   </div>
 
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;flex:1;">
+  <h2 class="slide-title anim-fade-up delay-1" style="margin-bottom:16px;">
+    Tunisia's specific <span class="highlight">challenge</span>
+  </h2>
 
-    <div>
-      <h2 class="slide-title anim-fade-up delay-1">
-        Tunisia's specific <span class="highlight">challenge</span>
-      </h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:13px;flex:1;">
 
-      <div style="display:flex;flex-direction:column;gap:14px;margin-top:8px;">
-        <div class="card anim-fade-up delay-2" style="display:flex;align-items:center;">
-          <span style="color:var(--teal);font-size:22px;">📚</span>
-          <span style="color:var(--soft-white);font-size:18px;margin-left:14px;font-weight:600;">
-            Bilingual education (Arabic + French)
-          </span>
-        </div>
-        <div class="card anim-fade-up delay-3" style="display:flex;align-items:center;">
-          <span style="color:var(--orange);font-size:22px;">🏫</span>
-          <span style="color:var(--soft-white);font-size:18px;margin-left:14px;font-weight:600;">
-            No neurodevelopmental screening infrastructure
-          </span>
-        </div>
-        <div class="card anim-fade-up delay-4" style="display:flex;align-items:center;">
-          <span style="color:var(--red);font-size:22px;">🚫</span>
-          <span style="color:var(--soft-white);font-size:18px;margin-left:14px;font-weight:600;">
-            Stigma delays professional help
-          </span>
-        </div>
-        <div class="card anim-fade-up delay-5" style="display:flex;align-items:center;border-color:var(--green);">
-          <span style="color:var(--green);font-size:22px;">💡</span>
-          <span style="color:var(--soft-white);font-size:18px;margin-left:14px;font-weight:600;">
-            B.Lexia designed for Arabic &amp; French scripts
-          </span>
-        </div>
-      </div>
-    </div>
+    <!-- LEFT COLUMN — challenges -->
+    <div style="display:flex;flex-direction:column;gap:8px;">
 
-    <div class="anim-fade-up delay-2"
-      style="position:relative;display:inline-block;
-      width:100%;max-height:55vh;">
-
-      <img src="images/tunisia.png"
-        style="max-height:55vh;max-width:100%;
-        object-fit:contain;display:block;
-        margin:0 auto;
-        filter:drop-shadow(0 0 24px rgba(0,188,212,0.25))
-        brightness(0.9);">
-
-      <!-- TUNIS annotation — top area ~52% left, 18% top -->
-      <div style="position:absolute;top:16%;left:48%;
-        transform:translateX(-50%);">
-        <div style="display:flex;flex-direction:column;
-          align-items:center;gap:4px;">
-          <div style="background:rgba(0,188,212,0.15);
-            border:1px solid var(--teal);
-            border-radius:8px;padding:5px 10px;
-            white-space:nowrap;">
-            <div style="color:var(--teal);font-size:11px;
-              font-weight:800;font-family:var(--font-head);">
-              TUNIS</div>
-            <div style="color:rgba(255,255,255,0.7);
-              font-size:10px;line-height:1.3;">
-              Capital · Few specialists<br>
-              High patient-to-expert ratio</div>
-          </div>
-          <div style="width:1px;height:16px;
-            background:var(--teal);opacity:0.7;"></div>
-          <div style="width:7px;height:7px;
-            border-radius:50%;background:var(--teal);
-            box-shadow:0 0 8px var(--teal);"></div>
+      <div class="card anim-fade-up delay-2" style="display:flex;align-items:flex-start;gap:13px;padding:11px 13px;flex:1;">
+        <span style="font-size:28px;flex-shrink:0;">📚</span>
+        <div>
+          <div style="color:var(--teal);font-size:20px;font-weight:800;margin-bottom:6px;">Bilingual education</div>
+          <div style="color:var(--soft-white);font-size:18px;line-height:1.5;font-weight:500;">Arabic + French scripts require separate phonological models — no validated bilingual screening tool exists in Tunisia.</div>
         </div>
       </div>
 
-      <!-- SOUSSE annotation — ~65% left, 35% top -->
-      <div style="position:absolute;top:37%;left:74%;
-        transform:translateX(-100%);">
-        <div style="display:flex;flex-direction:column;
-          align-items:center;gap:4px;">
-          <div style="background:rgba(255,107,53,0.12);
-            border:1px solid var(--orange);
-            border-radius:8px;padding:5px 10px;
-            white-space:nowrap;text-align:right;">
-            <div style="color:var(--orange);font-size:11px;
-              font-weight:800;font-family:var(--font-head);">
-              SOUSSE · ISITCOM</div>
-            <div style="color:rgba(255,255,255,0.7);
-              font-size:10px;line-height:1.3;">
-              0 pediatric screening centers<br>
-              No trained evaluators</div>
-          </div>
-          <div style="width:1px;height:16px;
-            background:var(--orange);opacity:0.7;"></div>
-          <div style="width:7px;height:7px;
-            border-radius:50%;background:var(--orange);
-            box-shadow:0 0 8px var(--orange);"></div>
-        </div>
-      </div>
-
-      <!-- SFAX annotation — ~63% left, 58% top -->
-      <div style="position:absolute;top:54%;left:72%;
-        transform:translateX(-100%);">
-        <div style="display:flex;flex-direction:column;
-          align-items:center;gap:4px;">
-          <div style="background:rgba(239,83,80,0.12);
-            border:1px solid var(--red);
-            border-radius:8px;padding:5px 10px;
-            white-space:nowrap;text-align:right;">
-            <div style="color:var(--red);font-size:11px;
-              font-weight:800;font-family:var(--font-head);">
-              SFAX</div>
-            <div style="color:rgba(255,255,255,0.7);
-              font-size:10px;line-height:1.3;">
-              2nd largest city<br>
-              No dyslexia screening access</div>
-          </div>
-          <div style="width:1px;height:16px;
-            background:var(--red);opacity:0.7;"></div>
-          <div style="width:7px;height:7px;
-            border-radius:50%;background:var(--red);
-            box-shadow:0 0 8px var(--red);"></div>
+      <div class="card anim-fade-up delay-3" style="display:flex;align-items:flex-start;gap:13px;padding:11px 13px;flex:1;">
+        <span style="font-size:28px;flex-shrink:0;">🏫</span>
+        <div>
+          <div style="color:var(--orange);font-size:20px;font-weight:800;margin-bottom:6px;">No screening infrastructure</div>
+          <div style="color:var(--soft-white);font-size:18px;line-height:1.5;font-weight:500;">Neurodevelopmental assessment centers are scarce. Most regions have zero pediatric specialists trained in dyslexia detection.</div>
         </div>
       </div>
 
     </div>
+
+    <!-- RIGHT COLUMN — more challenges -->
+    <div style="display:flex;flex-direction:column;gap:8px;">
+
+      <div class="card anim-fade-up delay-4" style="display:flex;align-items:flex-start;gap:13px;padding:11px 13px;flex:1;">
+        <span style="font-size:28px;flex-shrink:0;">🚫</span>
+        <div>
+          <div style="color:var(--red);font-size:20px;font-weight:800;margin-bottom:6px;">Stigma delays help</div>
+          <div style="color:var(--soft-white);font-size:18px;line-height:1.5;font-weight:500;">Cultural stigma around learning disabilities causes families to delay or avoid professional consultation, worsening outcomes.</div>
+        </div>
+      </div>
+
+      <div class="card anim-fade-up delay-5" style="display:flex;align-items:flex-start;gap:13px;padding:11px 13px;flex:1;border-color:var(--green);">
+        <span style="font-size:28px;flex-shrink:0;">💡</span>
+        <div>
+          <div style="color:var(--green);font-size:20px;font-weight:800;margin-bottom:6px;">B.Lexia addresses this gap</div>
+          <div style="color:var(--soft-white);font-size:18px;line-height:1.5;font-weight:500;">Browser-based, hardware-free pre-screening — accessible from any school or home with a standard webcam and internet connection.</div>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 
   <div class="slide-footer">
     <span class="footer-text">B.Lexia · PFE 2025–2026</span>
-    <span class="footer-text">04</span>
   </div>
 </div>
+

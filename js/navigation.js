@@ -53,7 +53,16 @@ async function loadSlide(index) {
     const res = await fetch(file);
     if (!res.ok) throw new Error('fetch failed');
     const html = await res.text();
-    document.getElementById('slide-container').innerHTML = html;
+    const container = document.getElementById('slide-container');
+    container.innerHTML = html;
+    container.querySelectorAll('script').forEach(function(oldScript) {
+      var newScript = document.createElement('script');
+      Array.from(oldScript.attributes).forEach(function(attr) {
+        newScript.setAttribute(attr.name, attr.value);
+      });
+      newScript.textContent = oldScript.textContent;
+      oldScript.parentNode.replaceChild(newScript, oldScript);
+    });
   } catch(e) {
     const iframe = document.createElement('iframe');
     iframe.src = file;
@@ -180,6 +189,26 @@ window.addEventListener('load', () => {
   }
 
   goTo(0);
+
+  // Prev button
+  const prevBtn = document.createElement('div');
+  prevBtn.id = 'prev-btn';
+  prevBtn.innerHTML = '&#8592;';
+  prevBtn.onclick = prev;
+  prevBtn.style.cssText = 'position:fixed;left:16px;bottom:50%;transform:translateY(50%);z-index:1000;width:44px;height:44px;border-radius:50%;background:rgba(0,188,212,0.15);border:1px solid rgba(0,188,212,0.4);color:#00BCD4;font-size:22px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.3s ease;user-select:none;';
+  prevBtn.onmouseenter = () => prevBtn.style.background = 'rgba(0,188,212,0.35)';
+  prevBtn.onmouseleave = () => prevBtn.style.background = 'rgba(0,188,212,0.15)';
+  document.body.appendChild(prevBtn);
+
+  // Next button
+  const nextBtn = document.createElement('div');
+  nextBtn.id = 'next-btn';
+  nextBtn.innerHTML = '&#8594;';
+  nextBtn.onclick = next;
+  nextBtn.style.cssText = 'position:fixed;right:16px;bottom:50%;transform:translateY(50%);z-index:1000;width:44px;height:44px;border-radius:50%;background:rgba(0,188,212,0.15);border:1px solid rgba(0,188,212,0.4);color:#00BCD4;font-size:22px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.3s ease;user-select:none;';
+  nextBtn.onmouseenter = () => nextBtn.style.background = 'rgba(0,188,212,0.35)';
+  nextBtn.onmouseleave = () => nextBtn.style.background = 'rgba(0,188,212,0.15)';
+  document.body.appendChild(nextBtn);
 });
 
 /* ── Expose globals for inline slide scripts ── */

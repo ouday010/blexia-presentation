@@ -1,41 +1,58 @@
-<link rel="stylesheet" href="../css/styles.css">
-<div class="slide" style="background:linear-gradient(135deg,#0D1B2A 0%,#0a2a3a 50%,#0D1B2A 100%);justify-content:center;align-items:center;text-align:center;">
+<div class="slide" style="background:linear-gradient(135deg,#0D1B2A 0%,#0a2a3a 50%,#0D1B2A 100%);padding:0;overflow:hidden;position:relative;">
 
-  <div style="display:flex;align-items:center;justify-content:center;gap:40px;margin-bottom:48px;padding:24px 40px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:20px;width:fit-content;margin-left:auto;margin-right:auto;" class="anim-fade-up delay-1">
-    <img src="images/isitcom_logo.png" style="height:160px;object-fit:contain;filter:brightness(1.1);" alt="ISITCOM">
-    <div style="width:1px;height:90px;background:rgba(255,255,255,0.15);"></div>
-    <img src="images/blexia_logo.png" style="height:160px;object-fit:contain;" alt="B.Lexia">
+  <!-- ISITCOM logo — top right corner -->
+  <div style="position:absolute;top:24px;right:32px;z-index:10;" class="anim-fade-up delay-1">
+    <img src="images/isitcom_logo.png" style="height:62px;object-fit:contain;filter:brightness(1.1);opacity:0.85;" alt="ISITCOM">
   </div>
 
-  <h1 class="slide-title anim-fade-up delay-2" style="font-size:clamp(40px,5.5vw,72px);max-width:900px;margin:0 auto 16px;">
-    B.Lexia
-  </h1>
-
-  <p class="slide-subtitle anim-fade-up delay-3" style="font-size:clamp(18px,2.2vw,28px);max-width:800px;margin:0 auto 40px;">
-    Multimodal AI Platform for Early Dyslexia Pre-Screening in Children
-  </p>
-
-  <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:48px;" class="anim-fade-up delay-4">
-    <span class="pill pill-teal" style="font-size:18px;padding:10px 24px;">Eye Tracking</span>
-    <span class="pill pill-teal" style="font-size:18px;padding:10px 24px;">Speech Analysis</span>
-    <span class="pill pill-teal" style="font-size:18px;padding:10px 24px;">Handwriting Recognition</span>
+  <!-- B.Lexia logo — left side, vertically centered -->
+  <div style="position:absolute;left:-20px;top:50%;transform:translateY(-50%);z-index:5;" class="anim-fade-in delay-1">
+    <img src="images/blexia_logo.png" style="height:544px;object-fit:contain;filter:drop-shadow(0 0 60px rgba(0,188,212,0.35));" alt="B.Lexia">
   </div>
 
-  <div style="display:grid;grid-template-columns:repeat(3,auto);gap:14px 40px;text-align:left;margin:0 auto;font-size:20px;" class="anim-fade-up delay-5">
-    <span style="color:var(--muted);font-size:14px;">Student</span>
-    <span style="color:var(--glass-border)">·</span>
-    <span style="color:var(--soft-white);font-size:14px;font-weight:600;">Bouazzi Ouday</span>
-
-    <span style="color:var(--muted);font-size:14px;">Supervisor</span>
-    <span style="color:var(--glass-border)">·</span>
-    <span style="color:var(--soft-white);font-size:14px;font-weight:600;">Dr. Jabberi Marwa</span>
-
-    <span style="color:var(--muted);font-size:14px;">Institution</span>
-    <span style="color:var(--glass-border)">·</span>
-    <span style="color:var(--soft-white);font-size:14px;font-weight:600;">ISITCOM · University of Sousse</span>
-
-    <span style="color:var(--muted);font-size:14px;">Year</span>
-    <span style="color:var(--glass-border)">·</span>
-    <span style="color:var(--soft-white);font-size:14px;font-weight:600;">2025 – 2026</span>
+  <!-- 3 pills in half-circle arc on right edge of logo -->
+  <div style="position:absolute;left:360px;top:50%;transform:translateY(-50%);z-index:10;" class="anim-fade-up delay-2">
+    <!-- Top pill — upper arc -->
+    <div style="position:absolute;top:-130px;left:20px;">
+      <span class="pill pill-teal" style="font-size:13px;padding:8px 21px;white-space:nowrap;">👁️ Eye Tracking</span>
+    </div>
+    <!-- Middle pill — rightmost point of arc -->
+    <div style="position:absolute;top:-16px;left:60px;">
+      <span class="pill pill-teal" style="font-size:13px;padding:8px 21px;white-space:nowrap;">🎙️ Speech Analysis</span>
+    </div>
+    <!-- Bottom pill — lower arc -->
+    <div style="position:absolute;top:100px;left:20px;">
+      <span class="pill pill-teal" style="font-size:13px;padding:8px 21px;white-space:nowrap;">✍️ Handwriting Recognition</span>
+    </div>
   </div>
+
+  <!-- Right side — title, subtitle, info grid — shifted up by 30% -->
+  <div style="position:absolute;right:48px;top:25%;z-index:10;max-width:480px;text-align:left;" class="anim-fade-up delay-3">
+
+    <h1 class="slide-title" style="font-size:clamp(42px,5.6vw,77px);margin:0 0 14px 0;">B.Lexia</h1>
+
+    <p class="slide-subtitle" style="font-size:clamp(16px,2vw,26px);margin:0 0 32px 0;line-height:1.4;">
+      Multimodal AI Platform for Early<br>Dyslexia Pre-Screening in Children
+    </p>
+
+    <div style="display:grid;grid-template-columns:auto 20px auto;gap:10px 24px;text-align:left;">
+      <span style="color:var(--muted);font-size:13px;">Student</span>
+      <span style="color:var(--glass-border);text-align:center;">·</span>
+      <span style="color:var(--soft-white);font-size:13px;font-weight:700;">Bouazzi Ouday</span>
+
+      <span style="color:var(--muted);font-size:13px;">Supervisor</span>
+      <span style="color:var(--glass-border);text-align:center;">·</span>
+      <span style="color:var(--soft-white);font-size:13px;font-weight:700;">Dr. Jabberi Marwa</span>
+
+      <span style="color:var(--muted);font-size:13px;">Institution</span>
+      <span style="color:var(--glass-border);text-align:center;">·</span>
+      <span style="color:var(--soft-white);font-size:13px;font-weight:700;">ISITCOM · University of Sousse</span>
+
+      <span style="color:var(--muted);font-size:13px;">Year</span>
+      <span style="color:var(--glass-border);text-align:center;">·</span>
+      <span style="color:var(--soft-white);font-size:13px;font-weight:700;">2025 – 2026</span>
+    </div>
+
+  </div>
+
 </div>
