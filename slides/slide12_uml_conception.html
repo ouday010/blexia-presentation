@@ -1,3 +1,31 @@
+<style>
+.diag-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:9999;align-items:center;justify-content:center;}
+.diag-modal.open{display:flex;}
+.diag-modal-inner{position:relative;width:min(1200px,95vw);border-radius:16px;overflow:hidden;box-shadow:0 0 80px rgba(0,188,212,0.3);}
+.diag-modal-inner img{width:100%;height:auto;display:block;border-radius:16px;}
+.diag-modal-close{position:absolute;top:14px;right:16px;background:rgba(0,0,0,0.7);border:none;color:#fff;font-size:22px;width:38px;height:38px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:10;}
+.diag-modal-close:hover{background:rgba(255,59,48,0.8);}
+.diag-thumb{cursor:pointer;position:relative;transition:transform 0.3s ease,box-shadow 0.3s ease;}
+.diag-thumb:hover{transform:translateY(-4px) scale(1.02);box-shadow:0 0 0 2px rgba(0,188,212,0.5),0 16px 60px rgba(0,0,0,0.6);}
+.diag-expand-hint{position:absolute;bottom:10px;right:10px;background:rgba(0,188,212,0.85);color:white;font-size:11px;padding:4px 10px;border-radius:12px;font-family:'JetBrains Mono',monospace;pointer-events:none;}
+</style>
+
+<!-- Modal for Class diagram -->
+<div class="diag-modal" id="classModal">
+  <div class="diag-modal-inner">
+    <button class="diag-modal-close" id="classClose">&#x2715;</button>
+    <img src="figures/fig3_3_class_diagram.png" alt="Class diagram fullscreen">
+  </div>
+</div>
+
+<!-- Modal for Auth sequence -->
+<div class="diag-modal" id="authModal">
+  <div class="diag-modal-inner">
+    <button class="diag-modal-close" id="authClose">&#x2715;</button>
+    <img src="figures/fig3_5_seq_auth.png" alt="Authentication sequence fullscreen">
+  </div>
+</div>
+
 <div class="slide">
   <div class="slide-header">
     <span class="section-tag">11 · UML Conception</span>
@@ -5,17 +33,64 @@
   </div>
 
   <h2 class="slide-title anim-fade-up delay-1" style="font-size:clamp(20px, 2.9vw, 38px);">
-    Static Design — <span class="highlight">Class Diagram</span>
+    UML Design — <span class="highlight">Class</span> &amp; <span class="accent">Sequence</span>
   </h2>
 
-  <div style="flex:1;display:flex;justify-content:center;align-items:center;">
-    <img src="figures/fig3_3_class_diagram.png"
-      class="anim-fade-in delay-2"
-      style="max-width:92%;max-height:65vh;object-fit:contain;border-radius:12px;filter:drop-shadow(0 8px 24px rgba(0,0,0,0.5));"
-      alt="Class diagram">
+  <div class="grid-2" style="flex:1;gap:24px;">
+
+    <!-- LEFT — Class Diagram -->
+    <div class="anim-fade-up delay-2" style="display:flex;flex-direction:column;gap:8px;">
+      <p style="color:var(--teal);font-size:13px;font-weight:700;font-family:var(--font-mono);letter-spacing:2px;">
+        STATIC DESIGN — <span style="color:var(--muted);font-size:11px;font-weight:400;">click to expand</span>
+      </p>
+      <div class="card diag-thumb" id="classThumb" style="flex:1;padding:12px;display:flex;align-items:center;justify-content:center;position:relative;">
+        <img src="figures/fig3_3_class_diagram.png"
+          style="max-width:100%;max-height:58vh;object-fit:contain;border-radius:8px;"
+          alt="Class diagram">
+        <div class="diag-expand-hint">🔍 Click to expand</div>
+      </div>
+    </div>
+
+    <!-- RIGHT — Auth Sequence -->
+    <div class="anim-fade-up delay-3" style="display:flex;flex-direction:column;gap:8px;">
+      <p style="color:var(--orange);font-size:13px;font-weight:700;font-family:var(--font-mono);letter-spacing:2px;">
+        DYNAMIC DESIGN — <span style="color:var(--muted);font-size:11px;font-weight:400;">click to expand</span>
+      </p>
+      <div class="card diag-thumb" id="authThumb" style="flex:1;padding:12px;display:flex;align-items:center;justify-content:center;position:relative;border-color:var(--orange);">
+        <img src="figures/fig3_5_seq_auth.png"
+          style="max-width:100%;max-height:58vh;object-fit:contain;border-radius:8px;"
+          alt="Authentication sequence">
+        <div class="diag-expand-hint">🔍 Click to expand</div>
+      </div>
+    </div>
+
   </div>
 
   <div class="slide-footer">
     <span class="footer-text">B.Lexia · PFE 2025–2026</span>
   </div>
 </div>
+
+<script>
+var classModal = document.getElementById('classModal');
+var classClose = document.getElementById('classClose');
+var classThumb = document.getElementById('classThumb');
+var authModal = document.getElementById('authModal');
+var authClose = document.getElementById('authClose');
+var authThumb = document.getElementById('authThumb');
+
+if(classThumb){ classThumb.addEventListener('click', function(){ classModal.classList.add('open'); }); }
+if(classClose){ classClose.addEventListener('click', function(){ classModal.classList.remove('open'); }); }
+if(classModal){ classModal.addEventListener('click', function(e){ if(e.target===classModal) classModal.classList.remove('open'); }); }
+
+if(authThumb){ authThumb.addEventListener('click', function(){ authModal.classList.add('open'); }); }
+if(authClose){ authClose.addEventListener('click', function(){ authModal.classList.remove('open'); }); }
+if(authModal){ authModal.addEventListener('click', function(e){ if(e.target===authModal) authModal.classList.remove('open'); }); }
+
+document.addEventListener('keydown', function(e){
+  if(e.key==='Escape'){
+    classModal.classList.remove('open');
+    authModal.classList.remove('open');
+  }
+});
+</script>

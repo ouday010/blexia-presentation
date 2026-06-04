@@ -1,40 +1,75 @@
-<div class="slide">
+<style>
+.img-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:9999;align-items:center;justify-content:center;}
+.img-modal.open{display:flex;}
+.img-modal-inner{position:relative;width:min(1100px,92vw);border-radius:16px;overflow:hidden;box-shadow:0 0 80px rgba(0,188,212,0.3);}
+.img-modal-inner img{width:100%;height:auto;display:block;border-radius:16px;}
+.img-modal-close{position:absolute;top:14px;right:16px;background:rgba(0,0,0,0.7);border:none;color:#fff;font-size:22px;width:38px;height:38px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:10;}
+.img-modal-close:hover{background:rgba(255,59,48,0.8);}
+.img-thumb{cursor:pointer;position:relative;transition:transform 0.2s ease,box-shadow 0.2s ease;}
+.img-thumb:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 0 0 2px rgba(0,188,212,0.5);}
+.img-hint{position:absolute;bottom:6px;right:6px;background:rgba(0,188,212,0.85);color:white;font-size:10px;padding:3px 8px;border-radius:10px;font-family:'JetBrains Mono',monospace;pointer-events:none;}
+</style>
+
+<!-- 6 modals -->
+<div class="img-modal" id="m1"><div class="img-modal-inner"><button class="img-modal-close" onclick="document.getElementById('m1').classList.remove('open')">&#x2715;</button><img src="figures/fig4_6_speech_input.png"></div></div>
+<div class="img-modal" id="m2"><div class="img-modal-inner"><button class="img-modal-close" onclick="document.getElementById('m2').classList.remove('open')">&#x2715;</button><img src="figures/ui_eye_session.jpg"></div></div>
+<div class="img-modal" id="m3"><div class="img-modal-inner"><button class="img-modal-close" onclick="document.getElementById('m3').classList.remove('open')">&#x2715;</button><img src="figures/fig4_10_hw_upload.png"></div></div>
+<div class="img-modal" id="m4"><div class="img-modal-inner"><button class="img-modal-close" onclick="document.getElementById('m4').classList.remove('open')">&#x2715;</button><img src="figures/ui_eye_results.png"></div></div>
+<div class="img-modal" id="m5"><div class="img-modal-inner"><button class="img-modal-close" onclick="document.getElementById('m5').classList.remove('open')">&#x2715;</button><img src="figures/fig4_11_hw_results.png"></div></div>
+<div class="img-modal" id="m6"><div class="img-modal-inner"><button class="img-modal-close" onclick="document.getElementById('m6').classList.remove('open')">&#x2715;</button><img src="figures/ui_report.jpg"></div></div>
+
+<div class="slide" style="padding-top:12px;">
   <div class="slide-header">
-    <span class="section-tag">12 · Platform Interfaces — Modules</span>
+    <span class="section-tag">12 · Platform Interfaces — Modules &amp; Results</span>
     <img src="images/blexia_logo.png" class="slide-logo" alt="B.Lexia">
   </div>
 
-  <h2 class="slide-title anim-fade-up delay-1" style="font-size:clamp(20px, 2.9vw, 38px);">
-    Screening <span class="highlight">Modules</span>
+  <h2 class="slide-title anim-fade-up delay-1" style="font-size:clamp(18px,2.6vw,36px);margin-bottom:10px;">
+    Screening <span class="highlight">Modules</span> → <span class="accent">Results</span>
   </h2>
 
-  <div class="grid-3" style="flex:1;gap:18px;">
-
-    <div class="card anim-fade-up delay-2" style="padding:14px;display:flex;flex-direction:column;gap:10px;border-color:var(--gold);">
-      <p style="color:var(--gold);font-size:13px;font-family:var(--font-mono);font-weight:700;letter-spacing:2px;">
-        🎙️ SPEECH
-      </p>
-      <img src="figures/fig4_6_speech_input.png"
-        style="width:100%;flex:1;object-fit:cover;border-radius:8px;"
-        alt="Speech module">
+  <!-- TOP ROW — Modules (input) -->
+  <div class="grid-3" style="gap:10px;margin-bottom:8px;">
+    <div class="card img-thumb anim-fade-up delay-2" onclick="document.getElementById('m1').classList.add('open')" style="padding:13px;display:flex;flex-direction:column;gap:8px;border-color:var(--gold);position:relative;">
+      <p style="color:var(--gold);font-size:11px;font-family:var(--font-mono);font-weight:700;letter-spacing:2px;">🎙️ SPEECH INPUT</p>
+      <img src="figures/fig4_6_speech_input.png" style="width:100%;flex:1;object-fit:cover;border-radius:6px;max-height:22vh;" alt="Speech">
+      <div class="img-hint">🔍 expand</div>
     </div>
-
-    <div class="card anim-fade-up delay-3" style="padding:14px;display:flex;flex-direction:column;gap:10px;border-color:#42A5F5;">
-      <p style="color:#42A5F5;font-size:13px;font-family:var(--font-mono);font-weight:700;letter-spacing:2px;">
-        👁️ EYE TRACKING
-      </p>
-      <img src="figures/ui_eye_session.jpg"
-        style="width:100%;flex:1;object-fit:cover;border-radius:8px;"
-        alt="Eye tracking module">
+    <div class="card img-thumb anim-fade-up delay-3" onclick="document.getElementById('m2').classList.add('open')" style="padding:13px;display:flex;flex-direction:column;gap:8px;border-color:#42A5F5;position:relative;">
+      <p style="color:#42A5F5;font-size:11px;font-family:var(--font-mono);font-weight:700;letter-spacing:2px;">👁️ EYE SESSION</p>
+      <img src="figures/ui_eye_session.jpg" style="width:100%;flex:1;object-fit:cover;border-radius:6px;max-height:22vh;" alt="Eye">
+      <div class="img-hint">🔍 expand</div>
     </div>
+    <div class="card img-thumb anim-fade-up delay-4" onclick="document.getElementById('m3').classList.add('open')" style="padding:13px;display:flex;flex-direction:column;gap:8px;border-color:var(--purple);position:relative;">
+      <p style="color:var(--purple);font-size:11px;font-family:var(--font-mono);font-weight:700;letter-spacing:2px;">✍️ HW UPLOAD</p>
+      <img src="figures/fig4_10_hw_upload.png" style="width:100%;flex:1;object-fit:cover;border-radius:6px;max-height:22vh;" alt="Handwriting">
+      <div class="img-hint">🔍 expand</div>
+    </div>
+  </div>
 
-    <div class="card anim-fade-up delay-4" style="padding:14px;display:flex;flex-direction:column;gap:10px;border-color:var(--purple);">
-      <p style="color:var(--purple);font-size:13px;font-family:var(--font-mono);font-weight:700;letter-spacing:2px;">
-        ✍️ HANDWRITING
-      </p>
-      <img src="figures/fig4_10_hw_upload.png"
-        style="width:100%;flex:1;object-fit:cover;border-radius:8px;"
-        alt="Handwriting module">
+  <!-- DIVIDER -->
+  <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px;" class="anim-fade-up delay-4">
+    <div style="flex:1;height:1px;background:var(--glass-border);"></div>
+    <span style="color:var(--teal);font-family:var(--font-mono);font-size:10px;letter-spacing:2px;text-transform:uppercase;white-space:nowrap;">⬇️ AI Processing → Results</span>
+    <div style="flex:1;height:1px;background:var(--glass-border);"></div>
+  </div>
+
+  <!-- BOTTOM ROW — Results (output) -->
+  <div class="grid-3" style="gap:10px;">
+    <div class="card img-thumb anim-fade-up delay-5" onclick="document.getElementById('m4').classList.add('open')" style="padding:13px;display:flex;flex-direction:column;gap:8px;border-color:#42A5F5;position:relative;">
+      <p style="color:#42A5F5;font-size:11px;font-family:var(--font-mono);font-weight:700;letter-spacing:2px;">👁️ EYE RESULTS</p>
+      <img src="figures/ui_eye_results.png" style="width:100%;flex:1;object-fit:cover;border-radius:6px;max-height:22vh;" alt="Eye results">
+      <div class="img-hint">🔍 expand</div>
+    </div>
+    <div class="card img-thumb anim-fade-up delay-5" onclick="document.getElementById('m5').classList.add('open')" style="padding:13px;display:flex;flex-direction:column;gap:8px;border-color:var(--purple);position:relative;">
+      <p style="color:var(--purple);font-size:11px;font-family:var(--font-mono);font-weight:700;letter-spacing:2px;">✍️ HW RESULTS</p>
+      <img src="figures/fig4_11_hw_results.png" style="width:100%;flex:1;object-fit:cover;border-radius:6px;max-height:22vh;" alt="HW results">
+      <div class="img-hint">🔍 expand</div>
+    </div>
+    <div class="card img-thumb anim-fade-up delay-6" onclick="document.getElementById('m6').classList.add('open')" style="padding:13px;display:flex;flex-direction:column;gap:8px;border-color:var(--teal);position:relative;">
+      <p style="color:var(--teal);font-size:11px;font-family:var(--font-mono);font-weight:700;letter-spacing:2px;">📋 CLINICAL REPORT</p>
+      <img src="figures/ui_report.jpg" style="width:100%;flex:1;object-fit:cover;border-radius:6px;max-height:22vh;" alt="Report">
+      <div class="img-hint">🔍 expand</div>
     </div>
   </div>
 
@@ -42,3 +77,18 @@
     <span class="footer-text">B.Lexia · PFE 2025–2026</span>
   </div>
 </div>
+
+<script>
+document.querySelectorAll('.img-modal').forEach(function(modal){
+  modal.addEventListener('click', function(e){
+    if(e.target === modal) modal.classList.remove('open');
+  });
+});
+document.addEventListener('keydown', function(e){
+  if(e.key === 'Escape'){
+    document.querySelectorAll('.img-modal').forEach(function(m){
+      m.classList.remove('open');
+    });
+  }
+});
+</script>

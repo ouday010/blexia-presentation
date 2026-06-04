@@ -1,38 +1,75 @@
-<div class="slide">
+<div class="slide" style="padding-top:12px;">
   <div class="slide-header">
-    <span class="section-tag">02 · Barriers</span>
+    <span class="section-tag">02 · Barriers &amp; Context</span>
     <img src="images/blexia_logo.png" class="slide-logo" alt="B.Lexia">
   </div>
 
-  <h2 class="slide-title anim-fade-up delay-1">
-    Why detection <span class="accent">fails</span>
+  <h2 class="slide-title anim-fade-up delay-1" style="font-size:clamp(20px,2.9vw,38px);margin-bottom:12px;">
+    Why detection <span class="accent">fails</span> — especially in <span class="highlight">Tunisia</span>
   </h2>
 
-  <div class="grid-3" style="flex:1;align-items:stretch;margin-top:6px;">
-
-    <div class="card card-red anim-fade-up delay-2" style="text-align:center;display:flex;flex-direction:column;align-items:center;gap:16px;">
-      <div style="font-size:38px;">🏥</div>
-      <h3 style="color:var(--white);font-family:var(--font-head);font-size:22px;font-weight:800;">Clinical Dependency</h3>
-      <p style="color:var(--muted);font-size:16px;line-height:1.5;">
+  <!-- TOP ROW — 3 global barriers -->
+  <div class="grid-3" style="gap:12px;margin-bottom:12px;">
+    <div class="card card-red anim-fade-up delay-2" style="text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px;padding:12px;">
+      <div style="font-size:32px;">🏥</div>
+      <h3 style="color:var(--white);font-family:var(--font-head);font-size:17px;font-weight:800;">Clinical Dependency</h3>
+      <p style="color:var(--muted);font-size:13px;line-height:1.4;">
         Requires trained specialists, standardised batteries, and weeks of waiting
       </p>
     </div>
-
-    <div class="card card-orange anim-fade-up delay-3" style="text-align:center;display:flex;flex-direction:column;align-items:center;gap:16px;">
-      <div style="font-size:38px;">⏳</div>
-      <h3 style="color:var(--white);font-family:var(--font-head);font-size:22px;font-weight:800;">Late Identification</h3>
-      <p style="color:var(--muted);font-size:16px;line-height:1.5;">
+    <div class="card card-orange anim-fade-up delay-3" style="text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px;padding:12px;">
+      <div style="font-size:32px;">⏳</div>
+      <h3 style="color:var(--white);font-family:var(--font-head);font-size:17px;font-weight:800;">Late Identification</h3>
+      <p style="color:var(--muted);font-size:13px;line-height:1.4;">
         Diagnosis often arrives after academic failure is already compounding
       </p>
     </div>
-
-    <div class="card card-purple anim-fade-up delay-4" style="text-align:center;display:flex;flex-direction:column;align-items:center;gap:16px;">
-      <div style="font-size:38px;">💸</div>
-      <h3 style="color:var(--white);font-family:var(--font-head);font-size:22px;font-weight:800;">Accessibility Gap</h3>
-      <p style="color:var(--muted);font-size:16px;line-height:1.5;">
+    <div class="card card-purple anim-fade-up delay-4" style="text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px;padding:12px;">
+      <div style="font-size:32px;">💸</div>
+      <h3 style="color:var(--white);font-family:var(--font-head);font-size:17px;font-weight:800;">Accessibility Gap</h3>
+      <p style="color:var(--muted);font-size:13px;line-height:1.4;">
         Specialist hardware and private clinics are out of reach for most families
       </p>
     </div>
+  </div>
+
+  <!-- DIVIDER -->
+  <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;" class="anim-fade-up delay-4">
+    <div style="flex:1;height:1px;background:var(--glass-border);"></div>
+    <span style="color:var(--teal);font-family:var(--font-mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;white-space:nowrap;">🇹🇳 Tunisia's specific challenge</span>
+    <div style="flex:1;height:1px;background:var(--glass-border);"></div>
+  </div>
+
+  <!-- BOTTOM ROW — diagonal staircase layout -->
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:auto auto auto;gap:12px;margin-top:4px;">
+
+    <!-- Bilingual — top left, row 1 col 1 -->
+    <div class="card anim-fade-up delay-5" style="display:flex;align-items:flex-start;gap:12px;padding:11px 13px;grid-column:1;grid-row:1;">
+      <span style="font-size:24px;flex-shrink:0;">📚</span>
+      <div>
+        <div style="color:var(--teal);font-size:14px;font-weight:800;margin-bottom:4px;">Bilingual education</div>
+        <div style="color:var(--soft-white);font-size:12px;line-height:1.4;">Arabic + French — no validated bilingual screening tool exists in Tunisia.</div>
+      </div>
+    </div>
+
+    <!-- B.Lexia green — middle center, row 2 col 2 -->
+    <div class="card card-green anim-fade-up delay-6" style="display:flex;align-items:flex-start;gap:12px;padding:11px 13px;grid-column:2;grid-row:2;">
+      <span style="font-size:24px;flex-shrink:0;">💡</span>
+      <div>
+        <div style="color:var(--green);font-size:14px;font-weight:800;margin-bottom:4px;">B.Lexia addresses this gap</div>
+        <div style="color:var(--soft-white);font-size:12px;line-height:1.4;">Browser-based, hardware-free — accessible from any school or home.</div>
+      </div>
+    </div>
+
+    <!-- Stigma — bottom right, row 3 col 3 -->
+    <div class="card anim-fade-up delay-5" style="display:flex;align-items:flex-start;gap:12px;padding:11px 13px;grid-column:3;grid-row:3;">
+      <span style="font-size:24px;flex-shrink:0;">🚫</span>
+      <div>
+        <div style="color:var(--red);font-size:14px;font-weight:800;margin-bottom:4px;">Stigma delays help</div>
+        <div style="color:var(--soft-white);font-size:12px;line-height:1.4;">Cultural stigma causes families to delay consultation, worsening outcomes.</div>
+      </div>
+    </div>
+
   </div>
 
   <div class="slide-footer">
