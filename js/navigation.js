@@ -4,6 +4,7 @@
 
 const SLIDE_FILES = [
   'slides/slide01_title.html',
+  'slides/slide01b_toc.html',
   'slides/slide02_human_context.html',
   'slides/slide03_barriers.html',
   'slides/slide05_existing_solutions.html',
